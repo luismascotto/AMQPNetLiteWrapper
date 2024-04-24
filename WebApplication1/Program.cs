@@ -44,12 +44,12 @@ app.MapGet("/weatherforecast", () =>
     }
     catch (Exception ex)
     {
-      ConsoleDbg.WriteLine($"Erro AMQP {ex}", ConsoleColor.Red);
+        ConsoleDbg.WriteLine($"Erro AMQP {ex}", ConsoleColor.Red);
     }
     finally
     {
         session?.Close();
-        sender?.Close();    
+        sender?.Close();
     }
 
     return forecast;
