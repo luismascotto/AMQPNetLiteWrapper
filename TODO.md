@@ -1,0 +1,1 @@
+POC for qpid-proton-dotnet amqp client
